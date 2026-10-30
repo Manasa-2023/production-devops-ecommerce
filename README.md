@@ -34,3 +34,20 @@ deploy, secure, and monitor a web application using DevOps practices.
 - [ ] Build the application
 - [ ] Create the CI/CD pipeline
 - [ ] Deploy and monitor the application
+
+## Automated Testing
+
+The application uses pytest and FastAPI TestClient
+to verify API behavior.
+
+### Tests implemented
+
+- Health endpoint returns HTTP 200.
+- Health endpoint returns the expected JSON response.
+- Home endpoint returns HTTP 200.
+- Home endpoint returns the expected project information.
+
+### Run tests
+
+```powershell
+python -m pytest -v
